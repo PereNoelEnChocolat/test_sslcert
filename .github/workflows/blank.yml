@@ -3,20 +3,20 @@
 name: CI
 
 # Controls when the workflow will run
-on:  
-  workflow_dispatch:  
-    inputs:  
-      environment:  
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
         description: 'Deployment environment'  
-        required: true  
-        default: 'val'  
-        type: choice  
-        options:  
-          - PROD  
-          - TEST  
-      docker_image_tag:  
-        description: 'Docker Image Tag'  
-        required: true  
+        required: true
+        default: 'val'
+        type: choice
+        options:
+          - PROD
+          - TEST
+      docker_image_tag:
+        description: 'Docker Image Tag'
+        required: true
         default: latest
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
