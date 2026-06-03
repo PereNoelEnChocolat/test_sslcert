@@ -7,8 +7,8 @@ on:
         default: 'val'
         type: choice
         options:
-          - prod
-          - val
+          - DEV
+          - PROD
       docker_image_tag:
         description: 'Docker Image Tag'
         required: true
