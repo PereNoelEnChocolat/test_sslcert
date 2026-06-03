@@ -12,8 +12,8 @@ on:
         default: 'val'  
         type: choice  
         options:  
-          - prod  
-          - val  
+          - PROD  
+          - TEST  
       docker_image_tag:  
         description: 'Docker Image Tag'  
         required: true  
